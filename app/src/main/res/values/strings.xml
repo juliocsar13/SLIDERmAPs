@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Application</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_place_map_fragment">PlaceMapFragment</string>
+    <string name="title_activity_dialog_user">DialogUserActivity</string>
+    <string name="usuario_register">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="name">Nombre</string>
+    <string name="lastname">Apellido</string>
+    <string name="Email">E-mail</string>
+    <string name="numbertelefono">Numero-Tel</string>
+    <string name="Maincontent">Main Content</string>
+    <string name="slidingpanel">Bienvenido a AkiTaxi</string>
+</resources>
