@@ -15,4 +15,8 @@
     <string name="numbertelefono">Numero-Tel</string>
     <string name="Maincontent">Main Content</string>
     <string name="slidingpanel">Bienvenido a AkiTaxi</string>
+    <string name="title_activity_second_panel">second_panel</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 </resources>
