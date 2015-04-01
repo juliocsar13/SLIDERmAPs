@@ -7,25 +7,136 @@
     android:layout_height="match_parent"
     android:gravity="bottom"
     sothree:umanoPanelHeight="68dp"
-    sothree:umanoShadowHeight="14dp">
-
-    <fragment
-
+    sothree:umanoShadowHeight="4dp">
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/map" tools:context=".MapsActivity"
-        android:name="com.google.android.gms.maps.SupportMapFragment">
+        android:visibility="invisible"
+        android:id="@+id/someID">
 
-    </fragment>
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:id="@+id/mapView">
 
-    <fragment
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:inputType="text"
+                    android:background="@drawable/shape_nota"
+                    android:hint="escribir nota (opcional)"
+                    android:gravity="center"
+                    android:layout_margin="5dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <Button
+                        android:layout_width="250dp"
+                        android:layout_height="55dp"
+                        android:text="Acept_request"
+                        android:id="@+id/button3"
+                        android:background="@drawable/verde"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="2dp" />
+
+                    <Button
+                        android:layout_width="250dp"
+                        android:layout_height="55dp"
+                        android:text="Acept_request"
+                        android:id="@+id/button4"
+                        android:background="@drawable/verde"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="2dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </fragment>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawable="@android:color/transparent"/>
+    </FrameLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.example.lenovo.myapplication.second_panel"
-        android:id="@+id/second_panel">
-    </fragment>
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/SlidingPaneLayout">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Datos de Usuario"/>
 
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
 
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher"
+                    android:layout_marginLeft="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="nombre"/>
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher"
+                    android:layout_marginLeft="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="numero"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="text para la informacion personal del usuario, una referencia de como es que esta vestido, etc. para una mejor localizacion"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+
+
