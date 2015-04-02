@@ -1,36 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical"
-        android:layout_gravity="center_horizontal">
-    <EditText
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:inputType="text"
-        android:background="@drawable/shape_nota"
-        android:hint="escribir nota (opcional)"
-        android:gravity="center"
-        android:layout_margin="5dp" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="45dp"
+            android:inputType="text"
+            android:background="@drawable/shape_nota"
+            android:hint="escribir nota (opcional)"
+            android:gravity="center"
+            android:layout_margin="5dp" />
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="horizontal"
         android:gravity="center">
         <Button
-            android:layout_width="250dp"
+            android:layout_width="150dp"
             android:layout_height="55dp"
-            android:text="Acept_request"
-            android:id="@+id/button3"
-            android:background="@drawable/verde"
-            android:onClick="AcceptRequest"
-            android:layout_gravity="bottom"
-            android:layout_margin="2dp" />
-        </LinearLayout>
-
-
+            android:text="Llamar Taxi"
+            android:id="@+id/btnCallTaxi"
+            android:textColor="#ff000000"
+            android:layout_gravity="bottom" />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:text="Cancelar taxi"
+            android:id="@+id/btnCancelTaxi"
+            android:textColor="#ff000000"
+            android:layout_gravity="bottom" />
     </LinearLayout>
+
+
 
 </LinearLayout>
